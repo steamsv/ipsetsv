@@ -1,29 +1,25 @@
 {
-	"mysql":{
-		"host":"127.0.0.1",
-		"port":3306,
-		"user":"root",
-		"passwd":"",
-		"table":"user",
-		"database":"python3"
-	},
-	"blackip":[
-		"255.255.255.255",
-		"168.192.1.1",
-		"127.0.0.0"
-	],
-	"client":{
-		"nodes": {
-			"local-1":{
-				"host":"http://127.0.0.1:9090",
-				"token":"bf682e10471f476aa053b7970803a83a"
-			},
-			"local-2":{
-				"host":"http://127.0.0.1:9090",
-				"token":"bf682e10471f476aa053b7970803a83a"
-			}
-		},
-		"timeout":180,
-		"setname":"whitev4"
-	}
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "passwd": "U0w34hqo",
+    "table": "user",
+    "database": "ipset"
+  },
+  "blackip": [
+    "255.255.255.255",
+    "168.192.1.1",
+    "1.1.1.1"
+  ],
+  "client": {
+    "nodes": {
+      "tw1": {
+        "host": "http://127.0.0.1:9090",
+        "token": "bf682e10471f476aa053b7970803a83a"
+      }
+    },
+    "timeout": 180,
+    "setname": "whitev4"
+  }
 }

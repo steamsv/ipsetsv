@@ -1,7 +1,7 @@
 ### 安装
 
 ```
-curl -L https://github.com/steamsv/brook/releases/latest/download/ipsetsv -o /usr/bin/ipsetsv
+curl -L https://github.com/steamsv/ipsetsv/raw/main/ipsetsv -o /usr/bin/ipsetsv
 chmod +x /usr/bin/ipsetsv
 ```
 

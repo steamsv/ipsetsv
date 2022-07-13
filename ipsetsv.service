@@ -1,0 +1,16 @@
+[Unit]
+Description=ipsetsv
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Type=simple
+User=root
+Restart=always
+RestartSec=1
+DynamicUser=true
+LimitNOFILE=4000000
+ExecStart=/usr/bin/ipsetsv serve --port 65000 --token 
+
+[Install]
+WantedBy=multi-user.target
